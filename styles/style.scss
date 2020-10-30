@@ -1,0 +1,40 @@
+@import './font.css';
+
+$white_color: #FFFFFF;
+$black_color: #000000;
+
+$background_main_color: $white_color;
+$background_secondary_color: #F2F2F2;
+
+$dark_color: $black_color;
+$secondary_color: rgba(0, 0, 0, 0.5);
+$details_color: rgba(0, 0, 0, 0.1);
+$desabled_color: rgba(0, 0, 0, 0.1);
+
+$main_text_color: rgba(0, 0, 0, 0.8);
+$header_color: rgba(0, 0, 0, 0.9);
+
+$accent_color: #DEC377;
+$accent_color_75: rgba(222, 195, 119, 0.75);
+$accent_color_40: rgba(222, 195, 119, 0.4);
+$accent_bright_color: #AB8B2F;
+$accent_saturated_color: #D3AF4A;
+
+$font_family_Commissioner_Regular: 'Commissioner_Regular', sans-serif;
+$font_family_Commissioner_Medium: 'Commissioner_Medium', sans-serif;
+$font_family_Commissioner_Bold: 'Commissioner_Bold', sans-serif;
+$font_family_Lato_Light: 'Lato_Light', sans-serif;
+$font_family_Lato_Regular: 'Lato_Regular', sans-serif;
+
+$font_weight_semi_bold: 600;
+
+$box_shadow_20: 0px 4px 20px rgba(0, 0, 0, 0.08);
+$box_shadow_10: 0px 4px 10px rgba(0, 0, 0, 0.05);
+$box_shadow_insert: inset 0px 20px 50px rgba(0, 0, 0, 0.15);
+
+$indent_section_section: 100px;
+$indent_color_block: 80px;
+$indent_signature_content: 40px;
+$indent_block_block: 40px;
+$indent_head_card: 35px;
+$indent_head_text: 30px;
