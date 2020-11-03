@@ -5,6 +5,7 @@ $black_color: #000000;
 
 $background_main_color: $white_color;
 $background_secondary_color: #F2F2F2;
+$background_green_color: #E5E5E5;
 
 $dark_color: $black_color;
 $secondary_color: rgba(0, 0, 0, 0.5);
@@ -67,6 +68,8 @@ body {
     font-size: 10px;
     font-family: $ff_lato_regular;
     color: $main_text_color;
+
+    background-color: $background_green_color;
 }
 
 .container {
@@ -83,6 +86,8 @@ body {
     padding: 15px 0;
 
     flex-wrap: wrap;
+
+    background-color: $background_main_color;
 }
 
 .header_links,
@@ -117,6 +122,8 @@ body {
     text-align: left;
     border: 0;
     outline: 0;
+
+    background-color: transparent;
 }
 
 .header_links_social,
@@ -177,6 +184,10 @@ body {
     background-position: center center;
     background-repeat: no-repeat no-repeat;
     background-size: auto;
+
+    .container {
+        height: 100%;
+    }
 }
 
 .main_slider_content {
@@ -256,4 +267,66 @@ body {
     right: auto;
     bottom: 121px;
     left: 85px;
+}
+
+.features {
+    display: flex;
+    margin-top: 560px;
+
+    justify-content: space-between;
+}
+
+.features_card {
+    display: flex;
+    width: 270px;
+    height: 285px;
+    margin: 30px 0px;
+    padding: 40px 0px 0px 0px;
+
+    flex-direction: column;
+    align-items: center;
+    flex: none;
+    order: 0;
+    align-self: flex-start;
+    flex-grow: 0;
+
+
+    background: $white_color;
+    box-shadow: $box_shadow_20;
+
+    z-index: 2;
+}
+
+.features_card_img {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 25px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+
+    border: 3px solid $details_color;
+    //box-sizing: border-box;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.features_card_title {
+    width: 230px;
+
+    font-family: $ff_lato_regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    color: $subtitle_color;
 }

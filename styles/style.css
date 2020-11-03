@@ -16,6 +16,7 @@ body {
   font-size: 10px;
   font-family: "Lato_Regular", sans-serif;
   color: rgba(0, 0, 0, 0.8);
+  background-color: #E5E5E5;
 }
 
 .container {
@@ -33,6 +34,7 @@ body {
   padding: 15px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #FFFFFF;
 }
 
 .header_links,
@@ -71,6 +73,7 @@ body {
   text-align: left;
   border: 0;
   outline: 0;
+  background-color: transparent;
 }
 
 .header_links_social,
@@ -129,6 +132,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat no-repeat;
   background-size: auto;
+}
+
+.main_slider .container {
+  height: 100%;
 }
 
 .main_slider_content {
@@ -209,5 +216,80 @@ body {
   right: auto;
   bottom: 121px;
   left: 85px;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 560px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 270px;
+  height: 285px;
+  margin: 30px 0px;
+  padding: 40px 0px 0px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.features_card_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.features_card_img img {
+  width: 60px;
+  height: 60px;
+}
+
+.features_card_title {
+  width: 230px;
+  font-family: "Lato_Regular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
 }
 /*# sourceMappingURL=style.css.map */
