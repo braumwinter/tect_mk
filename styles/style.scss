@@ -10,6 +10,7 @@ $dark_color: $black_color;
 $secondary_color: rgba(0, 0, 0, 0.5);
 $details_color: rgba(0, 0, 0, 0.1);
 $desabled_color: rgba(0, 0, 0, 0.1);
+$subtitle_color: rgba(0, 0, 0, 0.75);
 
 $main_text_color: rgba(0, 0, 0, 0.8);
 $header_color: rgba(0, 0, 0, 0.9);
@@ -157,4 +158,102 @@ body {
     text-align: left;
 
     text-transform: uppercase;
+
+    color: $subtitle_color;
+
+    cursor: pointer;
+}
+
+.main_slider {
+    position: absolute;
+
+    // width: 1920px;
+    width: 100%;
+    height: 650px;
+    left: 0px;
+    top: 150px;
+
+    background-image: url('./../assets/img/slide_1.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+}
+
+.main_slider_content {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-top: -43px;
+
+    flex-direction: column;
+    align-self: self-start;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main_slider_head {
+    margin-bottom: 20px;
+
+    font-family: $ff_commissioner_regular;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: $header_color;
+}
+
+.main_slider_title {
+    margin-bottom: 50px;
+
+    font-family: $ff_lato_light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $main_text_color;
+}
+
+.main_slider_button {
+    width: 200px;
+    height: 45px;
+
+    font-family: $ff_commissioner_bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    text-align: center;
+
+    color: $white_color;
+    text-transform: uppercase;
+
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+    background-color: $accent_color;
+
+    cursor: pointer;
+}
+
+.main_slider_arrow_left {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 121px;
+    left: 24px;
+}
+
+.main_slider_arrow_right {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 121px;
+    left: 85px;
 }
