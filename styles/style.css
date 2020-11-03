@@ -19,6 +19,13 @@ body {
   background-color: #E5E5E5;
 }
 
+button {
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+  text-transform: uppercase;
+}
+
 .container {
   position: relative;
   max-width: 1170px;
@@ -291,5 +298,178 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: rgba(0, 0, 0, 0.75);
+}
+
+.legal_support_business {
+  margin-top: 100px;
+  padding: 50px 0 35px 70px;
+  background-color: #FFFFFF;
+  background-image: url("./../assets/img/technology.png");
+  background-position: center right;
+  background-repeat: no-repeat no-repeat;
+  background-size: auto;
+}
+
+.legal_support_business_context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.legal_support_business_head {
+  width: 540px;
+  font-family: "Commissioner_Regular", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.legal_support_business_text {
+  width: 451px;
+  font-family: "Lato_Light", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.activities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.activities_head {
+  margin-bottom: 35px;
+  font-family: "Commissioner_Regular", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.activities_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activities_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 370px;
+  height: 140px;
+  margin-bottom: 30px;
+  padding: 25px 15px 25px 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FFFFFF;
+}
+
+.activities_card_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activities_card_name {
+  font-family: "Commissioner_Regular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.activities_card_link {
+  font-family: "Lato_Regular", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.activities_card_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  margin-left: -10px;
+  margin-top: -10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.activities_button {
+  width: 200px;
+  height: 45px;
+  margin-top: 10px;
+  font-family: "Commissioner_Bold", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #DEC377;
 }
 /*# sourceMappingURL=style.css.map */

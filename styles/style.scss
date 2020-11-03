@@ -72,6 +72,14 @@ body {
     background-color: $background_green_color;
 }
 
+button {
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+
+    text-transform: uppercase;
+}
+
 .container {
     position: relative;
 
@@ -280,8 +288,8 @@ body {
     display: flex;
     width: 270px;
     height: 285px;
-    margin: 30px 0px;
-    padding: 40px 0px 0px 0px;
+    margin: $indent_head_text 0px;
+    padding: $indent_signature_content 0px 0px 0px;
 
     flex-direction: column;
     align-items: center;
@@ -329,4 +337,161 @@ body {
     text-align: center;
 
     color: $subtitle_color;
+}
+
+.legal_support_business {
+    margin-top: $indent_section_section;
+    padding: 50px 0 $indent_head_card 70px;
+
+    background-color: $background_main_color;
+
+    background-image: url('./../assets/img/technology.png');
+    background-position: center right;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+}
+
+.legal_support_business_context {
+    display: flex;
+    flex-direction: column;
+}
+
+.legal_support_business_head {
+    width: 540px;
+
+    font-family: $ff_commissioner_regular;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: $header_color;
+}
+
+.legal_support_business_text {
+    width: 451px;
+
+    font-family: $ff_lato_light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $main_text_color;
+}
+
+.activities {
+    display: flex;
+    margin-top: $indent_section_section;
+
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.activities_head {
+    margin-bottom: $indent_head_card;
+
+    font-family: $ff_commissioner_regular;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: $header_color;
+
+}
+
+.activities_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activities_card {
+    display: flex;
+    width: 370px;
+    height: 140px;
+    margin-bottom: 30px;
+    padding: 25px 15px 25px 40px;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: $background_main_color;
+}
+
+.activities_card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activities_card_name {
+    //styleName: H5;
+    font-family: $ff_commissioner_regular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $header_color;
+}
+
+.activities_card_link {
+    //styleName: Button (additional);
+    font-family: $ff_lato_regular;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: $font_weight_semi_bold;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+    color: $secondary_color;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.activities_card_img {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    margin-left: -10px;
+    margin-top: -10px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    border: 1px solid $details_color;
+
+}
+
+.activities_button {
+    width: 200px;
+    height: 45px;
+    margin-top: 10px;
+
+    //styleName: Button (main);
+    font-family: $ff_commissioner_bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    text-align: center;
+
+    color: $white_color;
+
+    background-color: $accent_color;
 }
