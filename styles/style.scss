@@ -78,6 +78,8 @@ button {
     outline: 0;
 
     text-transform: uppercase;
+
+    cursor: pointer;
 }
 
 .container {
@@ -434,7 +436,8 @@ button {
 }
 
 .activities_card_name {
-    //styleName: H5;
+    width: 180px;
+
     font-family: $ff_commissioner_regular;
     font-size: 20px;
     font-style: normal;
@@ -494,4 +497,344 @@ button {
     color: $white_color;
 
     background-color: $accent_color;
+}
+
+.activities_description {
+    display: flex;
+    margin-top: $indent_section_section;
+}
+
+.activities_description_head {
+    display: flex;
+    width: 370px;
+    height: 100%;
+    margin-right: 30px;
+    flex-direction: row;
+    flex-shrink: 0;
+
+    h2 {
+        font-family: $ff_commissioner_regular;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        text-align: left;
+
+        color: $header_color;
+    }
+}
+
+.activities_description_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    p {
+        font-family: $ff_lato_light;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        color: $main_text_color;
+    }
+}
+
+.activities_slider {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    margin-top: 60px;
+}
+
+.activities_slider_img {
+    width: 100%;
+    height: 100%;
+}
+
+.activities_slider_arrow_left,
+.activities_slider_arrow_right {
+    position: absolute;
+    top: 265px;
+    bottom: auto;
+}
+
+.activities_slider_arrow_left {
+    left: -35px;
+    right: auto;
+}
+
+.activities_slider_arrow_right {
+    right: -35px;
+    left: auto;
+}
+
+.review {
+    display: flex;
+    width: 100%;
+    margin-top: -110px;
+    padding-top: 210px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: $background_main_color;
+}
+
+.review_head {
+    margin-bottom: $indent_head_card;
+
+    font-family: $ff_commissioner_regular;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: $header_color;
+
+}
+
+.review_slider {
+    width: 100%;
+    height: 585px;
+    margin-bottom: 30px;
+}
+
+.review_slide {
+    width: 100%;
+    height: 100%;
+}
+
+.review_card {
+    display: flex;
+    width: 570px;
+    height: 585px;
+    margin-bottom: 30px;
+    padding: 140px 50px 0 50px;
+
+    flex-direction: column;
+
+    background: $background_main_color;
+
+    background-image: url(./../assets/img/review.png);
+    background-position: center top;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+
+    box-shadow: $box_shadow_20;
+}
+
+.review_card_position {
+    //styleName: Main text (highlighted);
+    font-family: $ff_lato_regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $secondary_color;
+
+}
+
+.review_card_name {
+    margin-bottom: 20px;
+
+    font-family: $ff_commissioner_bold;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: $accent_color;
+
+}
+
+.review_card_text {
+    margin-bottom: 25px;
+
+    font-family: $ff_lato_light;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: $main_text_color;
+}
+
+.review_card_link {
+    //styleName: Button (additional);
+    font-family: $ff_lato_regular;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: $font_weight_semi_bold;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+    color: $secondary_color;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.review_slider_navigation {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review_slider_navigation_all {
+    width: 200px;
+    height: 45px;
+
+    font-family: $ff_commissioner_bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    text-align: center;
+
+    color: $white_color;
+
+    text-transform: uppercase;
+
+    background-color: $accent_color;
+}
+
+.review_slider_navigation_list {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review_slider_navigation_item {
+    list-style-type: none;
+
+    display: flex;
+    width: 10px;
+    height: 10px;
+    margin: auto 5px;
+
+    border-radius: 100%;
+
+    background-color: $desabled_color;
+
+    cursor: pointer;
+}
+
+.review_slider_navigation_item_active {
+    background-color: $accent_color;
+}
+
+.review_slider_navigation_arrows {
+    position: relative;
+
+    width: 120px;
+    height: 100%;
+}
+
+.review_slider_navigation_arrow_left,
+.review_slider_navigation_arrow_right {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+
+    cursor: pointer;
+}
+
+.review_slider_navigation_arrow_left {
+    left: 24px;
+    right: auto;
+}
+
+.review_slider_navigation_arrow_right {
+    right: 24px;
+    left: auto;
+}
+
+.partners {
+    display: flex;
+    width: 100%;
+    padding-top: 100px;
+
+    flex-direction: column;
+
+    background-color: $background_main_color;
+}
+
+.partners_info {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.partners_info_text {
+    width: 670px;
+    margin-right: 100px;
+
+    font-family: $ff_lato_light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $main_text_color;
+
+}
+
+.partners_info_button {
+
+    button {
+        width: 200px;
+        height: 45px;
+
+        border: 2px solid $accent_color;
+        border-radius: 2px;
+
+        color: $accent_color;
+        text-transform: uppercase;
+        text-align: center;
+
+        //styleName: Button (main);
+        font-family: $ff_commissioner_bold;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.08em;
+        text-align: center;
+
+        background-color: transparent;
+    }
+}
+
+.partners_logo {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.partners_logo_img {
+    margin: auto 10px;
+
+    filter: grayscale(100%);
 }

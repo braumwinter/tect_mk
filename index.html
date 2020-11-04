@@ -46,12 +46,24 @@
                 </div>
                 <div class="header_menu_links">
                     <ul class="header_menu_list">
-                        <li class="header_menu_item">главная</li>
-                        <li class="header_menu_item">о нас</li>
-                        <li class="header_menu_item">услуги</li>
-                        <li class="header_menu_item">тарифы</li>
-                        <li class="header_menu_item">инфоцентр</li>
-                        <li class="header_menu_item">контакты</li>
+                        <li class="header_menu_item">
+                            <a href="#">главная</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="#">о нас</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="#">услуги</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="#">тарифы</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="#">инфоцентр</a>
+                        </li>
+                        <li class="header_menu_item">
+                            <a href="#">контакты</a>
+                        </li>
                         <li class="header_menu_item" id="search">
                             <img src="./assets/img/search.png" alt="search">
                         </li>
@@ -75,8 +87,10 @@
                 </button>
             </div>
 
-            <img class="main_slider_arrow_left" src="./assets/img/slider_arrow_1.png" alt="arrow_left">
-            <img class="main_slider_arrow_right" src="./assets/img/slider_arrow_2.png" alt="arrow_right">
+            <img class="main_slider_arrow_left" id="main_slider_arrow_left" src="./assets/img/slider_arrow_1.png"
+                alt="arrow_left">
+            <img class="main_slider_arrow_right" id="main_slider_arrow_right" src="./assets/img/slider_arrow_2.png"
+                alt="arrow_right">
         </div>
     </div> <!-- /main_slider -->
 
@@ -242,11 +256,113 @@
                     </div>
                 </div>
             </div>
-            
-            <button class="activities_button">Все услуги</button>
 
+            <button class="activities_button">Все услуги</button>
         </div> <!-- /activities -->
+
+        <div class="activities_description">
+            <div class="activities_description_head">
+                <h2>Основные направления деятельности</h2>
+            </div>
+            <div class="activities_description_text">
+                <p>
+                    Основной принцип нашей работы – максимальная открытость и доверительные отношения с каждым клиентом,
+                    с тем чтобы от начала и до конца совместной работы, не возникало никакого недопонимания. Мы ставим
+                    целью не только привлечение новых клиентов, но и поддержание длительных партнерских отношений с
+                    клиентами, которые уже воспользовались нашими услугами.
+                </p>
+                <br>
+                <p>
+                    Быстрота анализа и профессиональных действий наших юристов обеспечивают успешное решение, казалось
+                    бы, неразрешимых вопросов. Богатые знания и солидный опыт позволяют нам оказывать комплексную
+                    правовую помощь в ситуациях любой сложности.
+                </p>
+            </div>
+        </div> <!-- /activities_description -->
+
+        <div class="activities_slider">
+            <div class="activities_slider_img">
+                <img src="./assets/img/slider_2_1.png" alt="activities">
+            </div>
+            <img class="activities_slider_arrow_left" id="activities_slider_arrow_left"
+                src="./assets/img/slider_2_arrow_1.png" alt="arrow_left">
+            <img class="activities_slider_arrow_right" id="activities_slider_arrow_right"
+                src="./assets/img/slider_2_arrow_2.png" alt="arrow_right">
+        </div> <!-- /activities_slider -->
     </div> <!-- /container -->
+
+    <div class="review">
+        <div class="container">
+            <h2 class="review_head">Отзывы наших партнеров</h2>
+
+            <div class="review_slider" id="review_slider">
+                <div class="review_slide">
+                    <div class="review_card">
+                        <p class="review_card_position">директор</p>
+                        <h3 class="review_card_name">С.В. Косачев</h3>
+                        <p class="review_card_text">Уважаемая Светлана Александровна! Наша компания выражает
+                            благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые
+                            технологии». Благодаря слаженной работе и высокой квалификации Ваших сотрудников и
+                            специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию
+                            денежных средств с должника. Профессионализм работников ООО «МК-Правовые технологии», а
+                            также желание работать со сложными и нестандартными задачами является залогом
+                            высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...</p>
+                        <a class="review_card_link" href="#">Читать далее</a>
+                    </div>
+
+                    <!--<div class="review_card">
+                        <p class="review_card_position">глава представительства</p>
+                        <h3 class="review_card_name">Валерий Мяснянкин</h3>
+                        <p class="review_card_text">Представительство корпорации «VMSN GROUP, INC.» (США) в Республике
+                            Беларусь на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках
+                            сопровождения деятельности по юридическим вопросам, в том числе по вопросам ведения
+                            кадрового делопроизводства – абонентское обслуживание. Хотелось бы отметить работу
+                            специалистов ООО «МК-Правовые технологии» хорошими теплыми словами: надёжные, обязательные,
+                            пунктуальные. Вопросы любой сложности им по плечу. Работая с профессионалами МК-Правовые
+                            технологии, всегда можно рассчитывать...</p>
+                        <a class="review_card_link" href="#">Читать далее</a>
+                    </div>-->
+                </div>
+            </div> <!-- /review_slider -->
+
+            <div class="review_slider_navigation">
+                <button class="review_slider_navigation_all">Все отзывы</button>
+
+                <ul class="review_slider_navigation_list">
+                    <li class="review_slider_navigation_item review_slider_navigation_item_active" id="review_slider_navigation_item_1"></li>
+                    <li class="review_slider_navigation_item" id="review_slider_navigation_item_2"></li>
+                    <li class="review_slider_navigation_item" id="review_slider_navigation_item_3"></li>
+                </ul>
+
+                <div class="review_slider_navigation_arrows">
+                    <img class="review_slider_navigation_arrow_left" id="review_slider_navigation_arrow_left"
+                        src="./assets/img/review_arrow_1.png" alt="arrow_left">
+                    <img class="review_slider_navigation_arrow_right" id="review_slider_navigation_arrow_right"
+                        src="./assets/img/review_arrow_2.png" alt="arrow_right">
+                </div>
+            </div>
+        </div> <!-- /container -->
+    </div> <!-- /review -->
+
+    <div class="partners">
+        <div class="container">
+            <div class="partners_info">
+                <div class="partners_info_text">
+                    <p>Оказываем юридические услуги юридическим лицам и индивидуальным предпринимателям. Специализируемся в области хозяйственного права, работаем на всей территории Республики Беларусь, а также за ее пределами, с бизнесом любого масштаба.</p>
+                </div>
+                <div class="partners_info_button">
+                    <button>Наши партнеры</button>
+                </div>
+            </div>
+            <div class="partners_logo">
+                <img class="partners_logo_img" src="./assets/img/partner_1.png" alt="БауАренда. Аренда строительной техники">
+                <img class="partners_logo_img" src="./assets/img/partner_2.png" alt="Титан инжиниринг">
+                <img class="partners_logo_img" src="./assets/img/partner_3.png" alt="Фаворит">
+                <img class="partners_logo_img" src="./assets/img/partner_4.png" alt="Альфа Банк">
+                <img class="partners_logo_img" src="./assets/img/partner_5.png" alt="IBA institute">
+            </div>
+        </div> <!-- /container -->
+    </div> <!-- /partners -->
 </body>
 
 </html>
