@@ -934,4 +934,272 @@ button {
   background-repeat: no-repeat no-repeat;
   background-size: auto;
 }
+
+.service_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service_list_head {
+  margin-bottom: 35px;
+  font-family: "Commissioner_Regular", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.service_list_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service_list_card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 140px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+}
+
+.service_list_card:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.service_list_color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70px;
+  height: 100%;
+  margin-right: 30px;
+}
+
+#service_list_card_1 .service_list_color,
+#service_list_card_2 .service_list_color,
+#service_list_card_9 .service_list_color,
+#service_list_card_10 .service_list_color {
+  background-color: rgba(222, 195, 119, 0.4);
+}
+
+#service_list_card_1,
+#service_list_card_6,
+#service_list_card_9 {
+  width: calc(40% - 15px);
+}
+
+#service_list_card_2,
+#service_list_card_5,
+#service_list_card_10 {
+  width: calc(60% - 15px);
+}
+
+#service_list_card_3 .service_list_color,
+#service_list_card_4 .service_list_color,
+#service_list_card_7 .service_list_color,
+#service_list_card_8 .service_list_color {
+  background-color: rgba(222, 195, 119, 0.75);
+}
+
+#service_list_card_3,
+#service_list_card_4,
+#service_list_card_7,
+#service_list_card_8 {
+  width: calc(50% - 15px);
+}
+
+#service_list_card_5 .service_list_color,
+#service_list_card_6 .service_list_color {
+  background-color: #DEC377;
+}
+
+.service_list_text {
+  max-width: 460px;
+  margin-top: 25px;
+  margin-right: 40px;
+  font-family: "Commissioner_Medium", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.service_list_link {
+  position: absolute;
+  top: auto;
+  right: 30px;
+  bottom: 25px;
+  left: auto;
+  font-family: "Lato_Regular", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.service_list_all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service_list_all_text {
+  width: 770px;
+}
+
+.service_list_all_text p {
+  font-family: "Lato_Light", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.service_list_all_button button {
+  width: 200px;
+  height: 45px;
+  color: #FFFFFF;
+  background-color: #DEC377;
+  border-radius: 2px;
+}
+
+.confidence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-top: 80px;
+  background-color: #FFFFFF;
+}
+
+.confidence_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 395px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.confidence_card_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.confidence_card_head {
+  margin-bottom: 30px;
+  font-family: "Commissioner_Regular", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.confidence_card_text {
+  width: 470px;
+  font-family: "Lato_Light", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.confidence_card_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.confidence_card_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 470px;
+  margin-bottom: 25px;
+  list-style: none;
+  font-family: "Lato_Regular", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.confidence_card_marker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin: 0 30px auto 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: transparent;
+  border: 1px solid rgba(222, 195, 119, 0.4);
+  border-radius: 100%;
+}
+
+.confidence_card_marker div {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #DEC377;
+}
 /*# sourceMappingURL=style.css.map */
