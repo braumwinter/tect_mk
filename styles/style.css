@@ -59,6 +59,14 @@ button {
           justify-content: space-between;
 }
 
+.header_links {
+  margin-bottom: 35px;
+}
+
+.header_menu {
+  margin-bottom: 20px;
+}
+
 .header_links_language {
   font-family: "Source_Sans_Pro_Light", sans-serif;
   font-size: 16px;
@@ -92,6 +100,41 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.first_phone {
+  width: 232px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 14px;
+}
+
+.second_phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 172px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .phone_links_number {
@@ -128,6 +171,11 @@ button {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.75);
   cursor: pointer;
+}
+
+.header_menu_item a {
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
 }
 
 .main_slider {
@@ -2109,5 +2157,84 @@ button {
   letter-spacing: 0.02em;
   text-align: left;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 335px;
+  padding-top: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.04)), to(rgba(0, 0, 0, 0))), url("./../assets/img/business_registration.png");
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0) 100%), url("./../assets/img/business_registration.png");
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  background-size: auto;
+}
+
+.breadcrumb_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumb_item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato_Light", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb_item:not(:first-child) {
+  margin-left: 5px;
+}
+
+.breadcrumb_item:not(:last-child)::after {
+  content: " ";
+  background: rgba(0, 0, 0, 0.5);
+  width: 1px;
+  height: 14px;
+  float: right;
+  margin-left: 5px;
+}
+
+.main_head {
+  margin-top: 65px;
+  margin-bottom: 30px;
+  font-family: "Commissioner_Regular", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.main_button {
+  width: 200px;
+  height: 50px;
+  font-family: "Commissioner_Bold", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #DEC377;
 }
 /*# sourceMappingURL=style.css.map */
