@@ -1223,7 +1223,7 @@ button {
 
 .advantages {
 
-    margin-top: $indent_color_block;
+    margin: $indent_color_block 0;
 }
 
 .advantages_head {
@@ -1326,4 +1326,225 @@ button {
     text-align: left;
 
     color: $main_text_color;
+}
+
+.cooperation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+.cooperation_info {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+.cooperation_head {
+    margin-bottom: $indent_head_card;
+
+    font-family: $ff_commissioner_medium;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: $header_color;
+}
+
+.cooperation_list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.cooperation_item {
+    list-style: none;
+
+    display: flex;
+    margin-bottom: $indent_head_card;
+
+    flex-direction: row;
+    align-items: flex-start;
+
+    //styleName: Main text (highlighted);
+    font-family: $ff_lato_regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $main_text_color;
+
+}
+
+.cooperation_marker {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+
+    flex-shrink: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: $ff_commissioner_regular;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    border-radius: 100%;
+    border: 1px solid $accent_color_75;
+
+    color: $accent_color;
+}
+
+.cooperation_text {
+    //styleName: Secondary text;
+    font-family: $ff_lato_light;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: $main_text_color;
+}
+
+.cooperation_form {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    padding: 40px 50px 50px 50px;
+
+    background-color: $background_main_color;
+}
+
+.cooperation_form_name_label {
+    font-family: $ff_commissioner_medium;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: $secondary_color;
+}
+
+.cooperation_form_name {
+    height: 35px;
+    width: 100%;
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid;
+    border-left: 0;
+    margin-bottom: 20px;
+
+    font-family: $ff_lato_light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $secondary_color;
+
+}
+
+.cooperation_form_phone_label {
+    font-family: $ff_commissioner_medium;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: $secondary_color;
+}
+
+.cooperation_form_phone {
+    height: 35px;
+    width: 100%;
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid;
+    border-left: 0;
+    margin-bottom: 20px;
+
+    font-family: $ff_lato_light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $main_text_color;
+}
+
+.cooperation_form_warning {
+    margin-bottom: 30px;
+
+    font-family: $ff_lato_light;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $secondary_color;
+
+}
+
+.cooperation_form_link {
+    font-family: $ff_lato_regular;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $secondary_color;
+
+    text-decoration: none;
+
+
+}
+
+.cooperation_form_button {
+    height: 50px;
+    //styleName: Button (main);
+    font-family: $ff_commissioner_bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    text-align: center;
+
+    color: $white_color;
+    background-color: $accent_color;
+
+    outline: none;
+    border: 0;
+    border-radius: 2px;
+
+    text-transform: uppercase;
+    cursor: pointer;
 }
