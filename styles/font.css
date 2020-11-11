@@ -81,3 +81,15 @@
     font-weight: 300;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Fira_Sans_ExtraBold';
+    src: url('./../FiraSans-ExtraBold.eot');
+    src: url('./../FiraSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./../FiraSans-ExtraBold.woff2') format('woff2'),
+        url('./../FiraSans-ExtraBold.woff') format('woff'),
+        url('./../FiraSans-ExtraBold.ttf') format('truetype'),
+        url('./../FiraSans-ExtraBold.svg#FiraSans-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}

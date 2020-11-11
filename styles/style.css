@@ -2473,4 +2473,28 @@ button {
 .registration_services_page_numbers_item_active {
   color: rgba(0, 0, 0, 0.9);
 }
+
+.commercial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Fira_Sans_ExtraBold", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
+}
 /*# sourceMappingURL=style.css.map */

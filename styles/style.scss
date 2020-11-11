@@ -36,6 +36,8 @@ $ff_source_sans_pro_light: 'Source_Sans_Pro_Light',
 sans-serif;
 $ff_source_sans_pro_regular: 'Source_Sans_Pro_Regular',
 sans-serif;
+$ff_fira_sans_extra_bold: 'Fira_Sans_ExtraBold',
+sans-serif;
 
 $font_weight_semi_bold: 600;
 
@@ -2396,4 +2398,27 @@ button {
 
 .registration_services_page_numbers_item_active {
     color: $header_color;
+}
+
+.commercial {
+    display: flex;
+    width: 100%;
+    height: 200px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: $ff_fira_sans_extra_bold;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    color: $details_color;
+
+    background: rgba(0, 0, 0, 0.1);
 }
