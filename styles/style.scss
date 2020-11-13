@@ -84,6 +84,16 @@ button {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
 .container {
     position: relative;
 
@@ -2523,6 +2533,10 @@ button {
         height: 10px;
         margin: auto 30px auto 60px;
 
+        flex-shrink: 0;
+
+        border-radius: 100%;
+
         background-color: $accent_color;
     }
 }
@@ -2619,7 +2633,7 @@ button {
     flex-direction: column;
     margin-top: 80px;
     margin-bottom: 100px;
-    
+
     align-items: flex-start;
 }
 
@@ -2724,4 +2738,122 @@ button {
     text-align: left;
 
     color: $main_text_color;
+}
+
+.documents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.documents_head {
+    margin-bottom: 30px;
+    //styleName: H2;
+    font-family: $ff_commissioner_regular;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: $header_color;
+}
+
+.documents_text {
+    width: 670px;
+    margin-bottom: 30px;
+    //styleName: Main text;
+    font-family: $ff_lato_light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $main_text_color;
+}
+
+.documents_info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: $background_main_color;
+}
+
+.documents_info_image {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 70px;
+    height: 525px;
+    width: 370px;
+
+    background-image: url('./../assets/img/documents.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+}
+
+.documents_info_text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+}
+
+.documents_info_head {
+    margin-bottom: 30px;
+    //styleName: Subtitle 1;
+    font-family: $ff_lato_regular;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: $font_weight_semi_bold;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: $subtitle_color;
+}
+
+.documents_info_list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.documents_info_item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+    //styleName: Main text;
+    font-family: $ff_lato_light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $main_text_color;
+
+
+    &:before {
+        content: '';
+
+        display: flex;
+        width: 10px;
+        height: 10px;
+        margin: 10px 30px auto 20px;
+
+        flex-shrink: 0;
+
+        border-radius: 100%;
+
+        background-color: $accent_color;
+    }
 }
