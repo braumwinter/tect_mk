@@ -5,7 +5,7 @@ $black_color: #000000;
 
 $background_main_color: $white_color;
 $background_secondary_color: #F2F2F2;
-$background_green_color: #E5E5E5;
+$background_gray_color: #E5E5E5;
 
 $dark_color: $black_color;
 $secondary_color: rgba(0, 0, 0, 0.5);
@@ -71,7 +71,7 @@ body {
     font-family: $ff_lato_regular;
     color: $main_text_color;
 
-    background-color: $background_green_color;
+    background-color: $background_gray_color;
 }
 
 button {
@@ -2776,34 +2776,44 @@ li {
     color: $main_text_color;
 }
 
-.documents_info {
+.documents_info,
+.aspect {
     display: flex;
     flex-direction: row;
     width: 100%;
     background-color: $background_main_color;
 }
 
-.documents_info_image {
+.documents_info_image,
+.aspect_head_block {
     display: flex;
     flex-shrink: 0;
-    margin-right: 70px;
+    padding-right: 30px;
     height: 525px;
-    width: 370px;
+    width: 400px;
+}
+
+.documents_info_image {
+    background-color: $background_main_color;
 
     background-image: url('./../assets/img/documents.png');
-    background-position: center center;
+    background-position: center left;
     background-repeat: no-repeat no-repeat;
     background-size: auto;
 }
 
-.documents_info_text {
+.documents_info_text,
+.aspect_info {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
 
+    background-color: $background_main_color;
 }
 
-.documents_info_head {
+.documents_info_head,
+.aspect_text {
     margin-bottom: 30px;
     //styleName: Subtitle 1;
     font-family: $ff_lato_regular;
@@ -2817,13 +2827,15 @@ li {
     color: $subtitle_color;
 }
 
-.documents_info_list {
+.documents_info_list,
+.aspect_list {
     display: flex;
     flex-direction: column;
     margin-right: 40px;
 }
 
-.documents_info_item {
+.documents_info_item,
+.aspect_item {
     display: flex;
     width: 100%;
     margin-bottom: 25px;
@@ -2856,4 +2868,42 @@ li {
 
         background-color: $accent_color;
     }
+}
+
+.aspect {
+    background-color: $background_gray_color;
+}
+
+.aspect_head_block {
+    padding-right: 60px;
+
+    background-color: $background_gray_color;
+}
+
+.aspect_head {
+    // padding-right: 60px;
+    //styleName: H2;
+    font-family: $ff_commissioner_regular;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: $header_color;
+
+    background-color: $background_gray_color;
+}
+
+.picture2 {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    background-image: url('./../assets/img/picture2.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
 }
