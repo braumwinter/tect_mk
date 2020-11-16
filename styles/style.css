@@ -56,6 +56,7 @@ li {
 
 .header_links,
 .header_menu {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +100,26 @@ li {
   border: 0;
   outline: 0;
   background-color: transparent;
+}
+
+.version_for_the_visually_impaired {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.version_for_the_visually_impaired img {
+  height: 21.875px;
+  width: 32.08333206176758px;
+}
+
+.version_for_the_visually_impaired img:hover {
+  -webkit-filter: invert(30%);
+          filter: invert(30%);
 }
 
 .header_links_social,
@@ -3191,6 +3212,128 @@ li {
           flex-direction: column;
   background-image: url("./../assets/img/reg.png");
   background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  background-size: auto;
+  -webkit-filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+}
+
+.connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+  padding: 40px 70px 0px 70px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.connection_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 530px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.connection_text {
+  font-family: "Lato_Light", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.connection_list {
+  margin: 10px auto 25px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.connection_item {
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Lato_Light", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.connection_text_bold {
+  margin-bottom: 20px;
+  font-family: "Lato_Light", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.connection_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: "Commissioner_Bold", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #DEC377;
+  border-radius: 2px;
+  color: #DEC377;
+  background-color: transparent;
+}
+
+.connection_image {
+  width: 435px;
+  height: 385px;
+  margin-top: -8px;
+  background-image: url("./../assets/img/smartphone.png");
+  background-position: top center;
   background-repeat: no-repeat no-repeat;
   background-size: auto;
 }

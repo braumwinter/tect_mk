@@ -114,6 +114,8 @@ li {
 
 .header_links,
 .header_menu {
+    position: relative;
+
     display: flex;
     width: 100%;
 
@@ -154,6 +156,27 @@ li {
     outline: 0;
 
     background-color: transparent;
+}
+
+.version_for_the_visually_impaired {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+
+    img {
+        height: 21.875px;
+        width: 32.08333206176758px;
+
+        
+    }
+
+    img:hover {
+        filter: invert(30%);
+    }
 }
 
 .header_links_social,
@@ -3050,6 +3073,114 @@ li {
 
     background-image: url('./../assets/img/reg.png');
     background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+}
+
+.connection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding: 40px 70px 0px 70px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.connection_info {
+    display: flex;
+    width: 530px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.connection_text {
+    //styleName: Main text;
+    font-family: $ff_lato_light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $main_text_color;
+}
+
+.connection_list {
+    margin: 10px auto 25px 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.connection_item {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    //styleName: Secondary text;
+    font-family: $ff_lato_light;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: $main_text_color;
+
+}
+
+.connection_text_bold {
+    margin-bottom: 20px;
+    //styleName: Main text;
+    font-family: $ff_lato_light;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $main_text_color;
+
+}
+
+.connection_button {
+    display: flex;
+    width: 200px;
+    height: 45px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    //styleName: Button (main);
+    font-family: $ff_commissioner_bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    justify-content: center;
+
+    border: 2px solid #DEC377;
+    border-radius: 2px;
+
+    color: $accent_color;
+    background-color: transparent;
+}
+
+.connection_image {
+    width: 435px;
+    height: 385px;
+    margin-top: -8px;
+
+    background-image: url('./../assets/img/smartphone.png');
+    background-position: top center;
     background-repeat: no-repeat no-repeat;
     background-size: auto;
 }
