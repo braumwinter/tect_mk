@@ -248,6 +248,7 @@ li {
 
 .main_slider {
     position: absolute;
+    overflow: hidden;
 
     // width: 1920px;
     width: 100%;
@@ -255,14 +256,66 @@ li {
     left: 0px;
     top: 150px;
 
-    background-image: url('./../assets/img/slide_1.png');
+    /*background-image: url('./../assets/img/slide_1.png');
     background-position: center center;
     background-repeat: no-repeat no-repeat;
-    background-size: auto;
+    background-size: auto;*/
 
     .container {
         height: 100%;
     }
+}
+
+.main_slider_first_item {
+    background-image: url('./../assets/img/slide_1.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+}
+
+.main_slider_second_item {
+    background-image: url('./../assets/img/slide_2.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+}
+
+.main_slider_third_item {
+    background-image: url('./../assets/img/slide_3.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+}
+
+.main_slider_fourth_item {
+    background-image: url('./../assets/img/slide_4.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+}
+
+.main_slider_fifth_item {
+    background-image: url('./../assets/img/slide_5.png');
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: auto;
+}
+
+.main_slider_wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform 0.7s ease;
+}
+
+.main_slider_item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+#container_main_slider {
+    height: 60px;
+    margin-top: -6%;
 }
 
 .main_slider_content {
@@ -2301,7 +2354,7 @@ li {
 }
 
 .nav_item_active {
-    
+
     border-bottom: 5px solid $accent_color;
 
     a {
@@ -3726,9 +3779,9 @@ li {
 
     &:hover {
         border-bottom: 1px solid $accent_color;
-    
+
     }
-    
+
     &:focus {
         border: 1px solid $accent_bright_color;
     }
